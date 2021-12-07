@@ -46,32 +46,15 @@ public class TourCourant {
              count[i] = countUp(i + 1);
          }
 	}
-	/*
-	 * private int nbJoueurs; private int nbTours;
-	 * 
-	 * public Partie(int nbJoueurs ,int nbTours) { this.nbJoueurs=nbJoueurs;
-	 * this.nbTours=nbTours; }
-	 * 
-	 * public int getNbTours() { return nbTours; }
-	 * 
-	 * public void selectionnerDes() {
-	 * 
-	 * }
-	 * 
-	 * public void lancerDes() {
-	 * 
-	 * }
-	 * 
-	 * public void determinerCombinaison() {
-	 * 
-	 * }
-	 * 
-	 * public void afficherScore() {
-	 * 
-	 * }
-	 * 
-	 * public void relancer(De[] des, boolean [] tab) { for (int
-	 * i=0;i<des.length;i++) { if (tab[i]) { des[i].lancer(); } } }
-	 */
+	
+	public String toString() {
+		//affiche le score au joueur afin qu'il selectionne les des à rejouer
+		String res="";
+		for(int i=0; i<5; i++) {
+			res+="de "+(int)(i+1)+" = "+des[i]+"\n" ;
+		}
+		return res;
+		
+	}
 	
 }
